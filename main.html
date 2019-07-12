@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>main</title>
+<style>
+body{
+		background:url("col.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+img{
+		float:left;
+		margin-top:-120px;
+		width:490px;
+		height:280px;
+}
+.heading
+	{
+		border-left:7px groove #4A235A;
+		margin-top:-150px;
+		background-color:#DAF7A6;
+		width:1050px;
+		float:right;
+	}
+.loginabut{
+				height:300px;
+	}
+.login{
+			border:5px groove black;
+			margin-right:100px;
+			background:#ffffff;
+			opacity:0.9;
+			float:right;
+	}
+	table{
+			height:275px;
+			margin-top:5%;
+	}
+	th,td,.log{
+			font-weight:bold;
+	}
+	.buttons{
+				float:left;
+				line-height:300px;
+				margin-left:100px;
+	}
+	.b1,.b2,.b3{
+				width:120px;
+				height:45px;
+				border:3px groove #D3D3D3;
+				background-color:white;
+				font-weight:bold;
+				color:black;
+				margin-left:20px;
+				opacity:0.9;
+	}
+	.b1:hover,.b2:hover,.b3:hover{
+						border:2px solid black;
+	}
+	.details{
+			float:right;
+			margin-top:180px;
+			margin-right:-300px;
+	}
+	.b4,.b5{
+			width:80px;
+			height:25px;
+			font-weight:bold;
+			margin:10px;
+	}
+	.b4:hover,.b5:hover{
+						border:2px solid #4a4646;
+	}
+	
+</style>
+</head>
+<body>
+	<script language="JavaScript" type="text/javascript">
+		function regis()
+		{
+			alert("You need to register");
+		}
+		function empty()
+		{
+			if((document.form1.user.value=="")||(document.form1.password.value==""))
+			{
+				alert("First you need to fill the details");
+			}
+			else
+			{
+				regis();
+			}
+		}
+		function newp()
+		{
+			window.open("register.html");
+		}
+	</script>
+	<img src="design3.png">
+	<div class="heading">
+
+		<font size=40 face="Engravers MT">
+		EDUCATION FOR ALL COLLEGE
+		</font>
+	</div>
+	<br><br><br>
+	<div class="loginabut">
+		<div class="login">
+			<form name="form1">
+			<table>
+				<tr><th><label>email-id:</label>
+				<td><input type="text" name="user" placeholder="Username or e-mail"></tr>
+				<tr><th><label>Password:</label>
+				<td><input type="password" name="password" placeholder="password"></tr>
+				<tr><td colspan=2><input type="checkbox" name="rememberme" id="rememberme" checked>
+				<label for="rememberme"><span class="box"></span>Remember me on this computer</label></tr>
+				<tr><td align="center"><button class="log" onclick="empty()">Login</button>
+				<td align="center"><button onclick="newp()">Register</button></tr>
+			</table>
+			</form>
+		</div>
+		<div class="buttons">
+			<a href="faclist.html"><button class="b1">FACULTY</button></a>
+			<a href="studlist.html"><button class="b2">STUDENT</button></a>
+			<a href=""><button class="b3">RESULT</button></a>
+		</div>
+	</div>
+<div class="details">
+	<a href="about.html"><button class="b4">About Us</button></a>
+	<a href="contact.html"><button class="b5">Contact</button></a>
+</div>		
+</body>
+</html>
